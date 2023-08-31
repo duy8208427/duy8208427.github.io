@@ -1,0 +1,251 @@
+.list-right{
+    .search-header{
+        .shop__search-wrapper{
+            display: flex;
+            align-items: center;
+            background: var(--color-grey-light);
+            padding: 0 21px;
+            margin-right: 100px !important;
+            box-shadow: 0px 4px 60px rgba(4, 6, 15, 0.1);
+            border-radius: 4px;
+            height: 50px;
+            width: calc(100% - 150px);
+            .shop__search-icon {
+                cursor: pointer;
+                margin-bottom: 0;
+                .svg-icon {
+                    margin-right: 15px;
+                }
+            }
+            .shop__search-input {
+                background: transparent;
+                border: none;
+                outline: none;
+                flex: 1;
+                margin-right: 15px;
+                &::placeholder {
+                    color: #BDBDBD;
+                }
+            }
+        }
+        #filter-product, #filter-date{
+            cursor: pointer;
+        }
+    }
+    .table-content{
+        td{
+            font-family: "Manrope-Bold";
+            font-size: 14px;
+            h5{
+                font-family: "Manrope-Bold";
+                font-size: 15px;
+            }
+        }
+    }
+    .info-detail{
+        border-top: 1px solid rgba(247, 247, 247, 1);
+        border-bottom: 1px solid rgba(247, 247, 247, 1);
+    }
+    .thanh-tien{
+        border-top: 1px solid rgba(247, 247, 247, 1);
+    }
+    .cart-product__item-quantity{
+        margin-right: 0px;
+        .button-quantity{
+            width: 30px;
+        }
+    }
+    .name-product-detail{
+        font-family: "Manrope-Bold";
+        font-size: 15px;
+    }
+    .footer-detail-product{
+        font-family: "Manrope-Bold";
+        font-size: 12px;
+        color:rgba(130, 128, 132, 1);
+        .info-date{
+            color: #30373D;
+        }
+    }
+    .nav-step-cart{
+        .step-item{
+            font-family: "Manrope-Bold";
+            font-weight: 700 !important;
+            font-size: 15px;
+            color: #DFDFDF;
+            .numer-step{
+                width: 24px;
+                height: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #DFDFDF;
+                color: var(--color-white-item);
+            }
+            .text-step{
+                padding-left: 7px;
+            }
+            &.active{
+                color: var(--primary-color);
+                .numer-step{
+                   background-color: var(--primary-color); 
+                }
+            }
+        }
+        svg{
+            margin: 0 15px;
+            &.active{
+                rect{
+                    fill: var(--primary-color);
+                }
+            }
+        }
+    }
+    .sub-title{
+        padding-top: 30px;
+        h5{
+            font-family: "Manrope-Bold";
+            font-weight: 700 !important;
+            font-size: 18px;
+            color: #30373D;
+            padding-right: 10px;
+        }
+    }
+    .summer-info{
+        border-top: 1px solid rgba(247, 247, 247, 1);
+    }
+    .transfer-form{
+        .section-info-seft, .section-info-address{
+            border-top: 1px solid rgba(247, 247, 247, 1);
+            padding: 20px 0px;
+        }
+    }
+    .status-order-area{
+        .title-status{
+            h2{
+                font-family: "Manrope-Bold";
+                font-weight: 700 !important;
+                font-size: 24px;
+                color: #489851;
+            }
+        }
+    }
+    .sp-cho-muon{
+        border: 1px solid #828084;
+        border-radius: 10px;
+    }
+    .btn-quet-ma-qr{
+        cursor: pointer;
+        .text-quet-qr{
+            color: var(--primary-color);
+        }
+        &:hover{
+            .text-quet-qr{
+                color: var(--text-color-primary);
+            }
+            svg path{
+                fill: var(--text-color-primary);
+            }
+        }
+    }
+    .input-code-form{
+        padding: 0px 15%;
+        .btn-check-code{
+            width: 180px;
+            margin-left: calc(50% - 90px);
+        }
+    }
+    .area-scan{
+        padding: 0px 25%;
+        .btn-scan-code{
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            border-radius: 50px;
+            font-family: "Manrope-Bold";
+            font-weight: 700 !important;
+            font-size: 18px;
+            &:hover{
+                border-color: var(--text-color-primary);
+                color: var(--text-color-primary);
+                svg path{
+                    fill: var(--text-color-primary);
+                }
+            }
+        }
+    }
+    .area-info-chung-nhan{
+        border: 1px solid var(--text-color-primary);
+        border-radius: 10px;
+    }
+    .sub-title-section{
+        font-family: "Manrope-Bold";
+        font-weight: 700 !important;
+        font-size: 15px;
+        color: var(--text-color-primary);
+        .number-check{
+            font-family: "UTM-Hanzel";
+            font-weight: 400 !important;
+            font-size: 20px;
+            color: var(--primary-color);
+            padding-right: 10px;
+        }
+    }
+    .info-product-detail{
+        .lable-product-name{
+            font-family: "Manrope-Bold";
+            font-weight: 800 !important;
+            font-size: 16px;
+            color: var(--text-color-primary);
+        }
+        .product-name{
+            font-family: "UTM-Hanzel";
+            font-weight: 400 !important;
+            font-size: 26px;
+            color: var(--primary-color);
+        }
+        .code-status, .qr-code{
+            p{
+                font-family: "Manrope-Bold";
+                font-weight: 700 !important;
+                font-size: 15px;
+                color: var(--text-color-primary);
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .btn-back-no-bg{
+        font-family: "UTM-Hanzel";
+        font-weight: 400 !important;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--text-color-primary);
+        svg{
+            margin-bottom: 4px;
+        }
+        &:hover{
+            color: var(--primary-color);
+            svg path{
+                fill: var(--primary-color);
+            }   
+        }
+    }
+    .title-active-bh{
+        font-family: "UTM-Hanzel";
+        font-weight: 400 !important;
+        font-size: 20px;
+        line-height: 24px;
+        color: var(--primary-color);
+    }
+    #edit-content{
+        cursor: pointer;
+        &:hover{
+            svg path{
+                fill: var(--primary-color);
+            }
+        }
+    }
+    .shop__search-wrapper.full-width{
+        width: 100% !important;
+        margin-right: 0px !important;
+    }
+}

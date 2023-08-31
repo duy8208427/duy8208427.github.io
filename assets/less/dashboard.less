@@ -1,0 +1,247 @@
+@import url('../less/common.less');
+.intro-dashboard{
+    .box-intro{
+        position: relative;
+        min-height: 200px;
+        padding: 20px;
+        .title-intro{
+            .icon-box{
+                width: 52px;
+                height: 52px;
+                border-radius: 100%;
+                background-color: var(--primary-color);
+                margin-right: 10px;
+            }
+            .title-text{
+                font-family: "Manrope-Bold";
+                font-size: 15px;
+                line-height: 20.25px;
+                color: var(--text-color-primary);
+            }
+        }
+        .total-number{
+            font-family: "Manrope-Bold";
+            font-size: 28px;
+            line-height: 42px;
+            color: var(--text-color-primary);
+            margin: 30px 0px 15px;
+        }
+        .detail-number{
+            p{
+                margin-bottom: 0px;
+                font-family: "Manrope-Bold";
+                font-size: 15px;
+                line-height: 20.25px;
+                color: var(--text-color-primary);
+                &.paersent-number{
+                    padding: 0px 10px 0px 5px;
+                }
+                &.number{
+                    font-family: "Manrope-Regular";
+                    color: rgba(206, 208, 216, 1);
+                }
+            }
+        }
+        &:hover{
+            background: var(--primary-color);
+            cursor: pointer;
+            .title-text, .total-number, .paersent-number{
+                color: var(--color-white-item);
+            }
+            .icon-box{
+                background-color: var(--color-white-item);
+                svg{
+                    path{
+                        stroke: var(--primary-color);
+                    }
+                }
+            }
+            .number{
+                color: rgba(255, 255, 255, .5);
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                background-color: #fff;
+                bottom: -15px;
+                right: -15px;
+                transform: rotateZ(45deg);
+            }
+        }
+    }
+}
+.chart-area{
+    position: relative;
+    margin: 5rem 0px;
+    .highcharts-credits{
+        display: none !important;
+    }
+    .highcharts-title{
+        color: var(--text-color-primary) !important;
+        text-align: left !important;
+        font-family: 'UTM-Hanzel' !important;
+        font-size: 20px !important;
+        font-weight: 400 !important;
+    }
+    .highcharts-xaxis{
+        display: none !important;
+    }
+    .highcharts-yaxis-labels{
+        text{
+            text-anchor: middle !important;
+            font-family: "Manrope-Bold" !important;
+            font-size: 12px !important;
+            color: var(--color-grey-dark) !important;
+        }
+    }
+    .highcharts-axis-labels{
+        text{
+            text-anchor: middle !important;
+            font-family: "Manrope-Regular" !important;
+            font-size: 14px !important;
+            color: var(--color-grey-dark) !important;
+        }
+    }
+    .highcharts-tooltip {
+        padding: 10px;
+       text{
+            font-family: "Manrope-Regular" !important;
+            font-size: 12px !important;
+            color: var(--color-grey-dark) !important;
+        }
+    }
+
+    /* Additional styles for tooltip header and point text */
+    .highcharts-tooltip-header {
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+
+    .highcharts-tooltip-point {
+        margin-top: 4px;
+    }
+    .dropdown{
+        width: fit-content;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        top: 0;
+        .btn-filter{
+            font-family: "Manrope-Bold" !important;
+            font-size: 14px !important;
+            background: transparent;
+            color: var(--primary-color);
+            border: none;
+        }
+    }
+}
+
+.table-area{
+    .box-table{
+        .header-box{
+            justify-content: space-between;
+            align-items: center;
+            .btn-filter{
+                font-family: "Manrope-Bold" !important;
+                font-size: 14px !important;
+                background: transparent;
+                color: var(--color-grey-dark);
+                border: none;
+
+            }
+            .see-all{
+                color: rgba(87, 59, 255, 1);
+                font-family: "Manrope-Bold" !important;
+                font-size: 14px !important;     
+            }
+        }
+        .table-content{
+            margin-top: 2rem;
+            .table{
+                th{
+                    font-family: "Manrope-Bold";
+                    font-size: 12px;
+                    color: var(--color-grey-dark);
+                    padding: 12px 7px;
+                    &.th-so-don{
+                        min-width: 60px;
+                    }
+                    &.th-tang-truong{
+                        min-width: 86px;
+                    }
+                    &:last-child{
+                        text-align: right;
+                    }
+                }
+                td{
+                    font-family: "Manrope-Bold";
+                    font-size: 14px;
+                    color: var(--text-color-primary);
+                    h5{
+                        font-family: "Manrope-Bold";
+                        font-size: 14px;
+                    }
+                    p{
+                        font-family: "Manrope-Regular";
+                        &.paersent-number{
+                            font-family: "Manrope-Bold";
+                        }
+                    }
+                    .media{
+                        align-items: center !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .dashboard-management{
+
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+   .dashboard-management{
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .dashboard-management{
+    }
+}
+
+@media only screen and (max-width: 1024px) and (max-width: 389px) {
+  .dashboard-management{
+        .content-order{
+            .menu-left{
+                .list-menu{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .item-menu{
+                        flex: 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 389px) {
+    .dashboard-management{
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .dashboard-management{
+    }
+}
+
+@media only screen and (max-width: 420px) {
+  .dashboard-management{
+    }
+}
